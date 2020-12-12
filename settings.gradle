@@ -1,0 +1,8 @@
+rootProject.name = 'JenkinsTest'
+include 'folder1:folder2:folder3:folder4'
+findProject(':folder1:folder2:folder3:folder4')?.name = 'folder4'
+include 'level1:level2:level3:level4'
+findProject(':level1:level2:level3:level4')?.name = 'level4'
+include 'level1:level5'
+findProject(':level1:level5')?.name = 'level5'
+
